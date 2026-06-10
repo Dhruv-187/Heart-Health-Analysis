@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Heart Health Analysis | Project Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0f172a;
+color:white;
+}
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:rgba(15,23,42,.95);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+nav h2{
+color:#38bdf8;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+margin-left:25px;
+transition:.3s;
+}
+
+nav a:hover{
+color:#38bdf8;
+}
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+background:linear-gradient(135deg,#0f172a,#1e3a8a);
+}
+
+.hero h1{
+font-size:55px;
+margin-bottom:15px;
+}
+
+.hero span{
+color:#38bdf8;
+}
+
+.hero p{
+font-size:20px;
+max-width:800px;
+margin:auto;
+line-height:1.8;
+}
+
+.btn{
+display:inline-block;
+margin-top:30px;
+padding:14px 30px;
+background:#38bdf8;
+color:black;
+text-decoration:none;
+font-weight:bold;
+border-radius:8px;
+transition:.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+section{
+padding:90px 8%;
+}
+
+.title{
+font-size:38px;
+margin-bottom:40px;
+color:#38bdf8;
+text-align:center;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.card{
+background:#1e293b;
+padding:25px;
+border-radius:15px;
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card h3{
+margin-bottom:15px;
+color:#38bdf8;
+}
+
+.timeline{
+display:grid;
+gap:20px;
+}
+
+.item{
+background:#1e293b;
+padding:20px;
+border-left:5px solid #38bdf8;
+border-radius:8px;
+}
+
+.skills{
+display:flex;
+flex-wrap:wrap;
+gap:15px;
+justify-content:center;
+}
+
+.skill{
+padding:12px 20px;
+background:#1e293b;
+border-radius:30px;
+}
+
+footer{
+text-align:center;
+padding:40px;
+background:#020617;
+}
+
+footer a{
+color:#38bdf8;
+text-decoration:none;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:38px;
+}
+
+.hero p{
+font-size:17px;
+}
+
+nav{
+flex-direction:column;
+}
+
+nav div{
+margin-top:10px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+
+<h2>Heart Health Analysis</h2>
+
+<div>
+
+<a href="#about">About</a>
+<a href="#features">Features</a>
+<a href="#workflow">Workflow</a>
+<a href="#skills">Skills</a>
+<a href="#contact">Contact</a>
+
+</div>
+
+</nav>
+
+<section class="hero">
+
+<div>
+
+<h1>Heart <span>Health Analysis</span></h1>
+
+<p>
+
+A Machine Learning project that predicts the likelihood of heart disease
+using patient health data through data preprocessing, visualization,
+classification models, and predictive analytics.
+
+</p>
+
+<a class="btn" href="https://github.com/Dhruv-187/Heart-Health-Analysis" target="_blank">
+View GitHub
+</a>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="title">About the Project</h2>
+
+<div class="card">
+
+<p style="line-height:2;">
+
+Heart disease is one of the leading causes of death worldwide.
+This project uses Machine Learning techniques to analyze patient
+health parameters and predict the probability of heart disease.
+It demonstrates the complete Data Science workflow including
+data preprocessing, exploratory data analysis, feature engineering,
+model training, evaluation, and prediction.
+
+</p>
+
+</div>
+
+</section>
+
+<section id="features">
+
+<h2 class="title">Project Features</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Data Preprocessing</h3>
+<p>
+Cleaning and preparing healthcare datasets for Machine Learning.
+</p>
+</div>
+
+<div class="card">
+<h3>Exploratory Data Analysis</h3>
+<p>
+Understanding trends and relationships through statistical analysis and visualization.
+</p>
+</div>
+
+<div class="card">
+<h3>Machine Learning</h3>
+<p>
+Training classification algorithms to predict heart disease risk.
+</p>
+</div>
+
+<div class="card">
+<h3>Prediction System</h3>
+<p>
+Generates predictions based on patient medical attributes.
+</p>
+</div>
+
+<div class="card">
+<h3>Model Evaluation</h3>
+<p>
+Evaluates performance using standard classification metrics.
+</p>
+</div>
+
+<div class="card">
+<h3>Healthcare Analytics</h3>
+<p>
+Demonstrates the application of AI and Data Science in healthcare.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="workflow">
+
+<h2 class="title">Machine Learning Workflow</h2>
+
+<div class="timeline">
+
+<div class="item">
+<h3>1. Data Collection</h3>
+</div>
+
+<div class="item">
+<h3>2. Data Cleaning</h3>
+</div>
+
+<div class="item">
+<h3>3. Exploratory Data Analysis</h3>
+</div>
+
+<div class="item">
+<h3>4. Feature Engineering</h3>
+</div>
+
+<div class="item">
+<h3>5. Model Training</h3>
+</div>
+
+<div class="item">
+<h3>6. Model Evaluation</h3>
+</div>
+
+<div class="item">
+<h3>7. Prediction Generation</h3>
+</div>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2 class="title">Technologies Used</h2>
+
+<div class="skills">
+
+<div class="skill">Python</div>
+<div class="skill">Pandas</div>
+<div class="skill">NumPy</div>
+<div class="skill">Scikit-Learn</div>
+<div class="skill">Matplotlib</div>
+<div class="skill">Machine Learning</div>
+<div class="skill">Data Analysis</div>
+<div class="skill">Jupyter Notebook</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">My Role</h2>
+
+<div class="card">
+
+<ul style="line-height:2;padding-left:20px;">
+
+<li>Collected and prepared the dataset</li>
+
+<li>Performed data preprocessing and cleaning</li>
+
+<li>Conducted exploratory data analysis</li>
+
+<li>Built Machine Learning models</li>
+
+<li>Evaluated prediction performance</li>
+
+<li>Documented the project and results</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="title">Project Repository</h2>
+
+<div class="card" style="text-align:center;">
+
+<h3>GitHub</h3>
+
+<p>
+
+<a
+style="color:#38bdf8;text-decoration:none;"
+href="https://github.com/Dhruv-187/Heart-Health-Analysis"
+target="_blank">
+
+github.com/Dhruv-187/Heart-Health-Analysis
+
+</a>
+
+</p>
+
+<br>
+
+<a class="btn"
+href="https://github.com/Dhruv-187/Heart-Health-Analysis"
+target="_blank">
+
+Explore Project
+
+</a>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>Created by Dhruv Rangari</h3>
+
+<p>
+
+Machine Learning • Data Science • Healthcare Analytics
+
+</p>
+
+</footer>
+
+</body>
+</html>
